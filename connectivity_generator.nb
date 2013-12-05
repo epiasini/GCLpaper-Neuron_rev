@@ -1,22 +1,3 @@
-(* Content-type: application/vnd.wolfram.mathematica *)
-
-(*** Wolfram Notebook File ***)
-(* http://www.wolfram.com/nb *)
-
-(* CreatedBy='Mathematica 8.0' *)
-
-(*CacheID: 234*)
-(* Internal cache information:
-NotebookFileLineBreakTest
-NotebookFileLineBreakTest
-NotebookDataPosition[       157,          7]
-NotebookDataLength[     64401,       1326]
-NotebookOptionsPosition[     62226,       1251]
-NotebookOutlinePosition[     62585,       1267]
-CellTagsIndexPosition[     62542,       1264]
-WindowFrame->Normal*)
-
-(* Beginning of Notebook Content *)
 Notebook[{
 Cell[BoxData[
  RowBox[{"(*", 
@@ -53,9 +34,8 @@ Cell[BoxData["\<\"/home/eugenio/Dropbox/GCLpaper/Billings_etal_Silver_paper_\
 Cell[BoxData[
  RowBox[{
   StyleBox[
-   RowBox[{"SetDirectory", "::", "cdir"}], "MessageName"], 
-  RowBox[{
-  ":", " "}], "\<\"Cannot set current directory to \
+   RowBox[{"SetDirectory", "::", "cdir"}], "MessageName"], ":", 
+  " ", "\<\"Cannot set current directory to \
 \[NoBreak]\\!\\(\\\"../../Code/Mathematica/\\\"\\)\[NoBreak]. \
 \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
 ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/General/cdir\\\", \
@@ -83,10 +63,9 @@ Cell[BoxData[
 Cell[BoxData[
  RowBox[{
   StyleBox[
-   RowBox[{"Import", "::", "nffil"}], "MessageName"], 
-  RowBox[{
-  ":", " "}], "\<\"File not found during \[NoBreak]\\!\\(Import\\)\[NoBreak]. \
-\\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
+   RowBox[{"Import", "::", "nffil"}], "MessageName"], ":", 
+  " ", "\<\"File not found during \[NoBreak]\\!\\(Import\\)\[NoBreak]. \\!\\(\
+\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
 ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/Import/nffil\\\", \
 ButtonNote -> \\\"Import::nffil\\\"]\\)\"\>"}]], "Message", "MSG",
  CellChangeTimes->{3.5952334387819*^9}],
@@ -126,11 +105,11 @@ Cell[BoxData[
     "to", " ", "change"}], "*)"}], "\n", 
   RowBox[{
    RowBox[{
-    RowBox[{"nummf", "=", "2745"}], ";"}], " ", "\[IndentingNewLine]", 
+    RowBox[{"nummf", "=", "2745"}], ";"}], " ", "\n", 
    RowBox[{"(*", 
     RowBox[{
     "Number", " ", "of", " ", "connections", " ", "for", " ", "each", " ", 
-     "GRC"}], "*)"}], "\n", 
+     "GRC"}], "*)"}], "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{"d", "=", "4"}], ";"}], "\[IndentingNewLine]", 
    RowBox[{"(*", 
@@ -141,7 +120,7 @@ Cell[BoxData[
        "embedding", " ", "geom", " ", "is", " ", "a", " ", "cube"}]}]}], 
     "*)"}], "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{"biglen", "=", "200"}], ";"}], "\n", 
+    RowBox[{"biglen", "=", "200"}], ";"}], "\[IndentingNewLine]", 
    RowBox[{"(*", 
     RowBox[{
      RowBox[{
@@ -159,52 +138,53 @@ Cell[BoxData[
        "means"}], " ", "-", " ", 
       RowBox[{
       "but", " ", "it", " ", "need", " ", "to", " ", "be", " ", "here", " ", 
-       "nevertheless"}]}]}], "*)"}], "\[IndentingNewLine]", 
+       "nevertheless"}]}]}], "*)"}], "\n", 
    RowBox[{
     RowBox[{"rdist", "=", 
      RowBox[{"{", 
-      RowBox[{"45", ",", "17", ",", "8", ",", "5"}], "}"}]}], ";"}], 
-   "\[IndentingNewLine]", 
+      RowBox[{"45", ",", "17", ",", "8", ",", "5"}], "}"}]}], ";"}], "\n", 
    RowBox[{"(*", 
     RowBox[{
-     RowBox[{"glomerular", " ", "x"}], "-", "spacing"}], "*)"}], "\n", 
-   RowBox[{
-    RowBox[{"glox", "=", "60"}], ";"}], "\[IndentingNewLine]", 
-   RowBox[{"(*", 
-    RowBox[{
-     RowBox[{"glomerular", " ", "y"}], "-", "spacing"}], "*)"}], "\n", 
-   RowBox[{
-    RowBox[{"gloy", "=", "20"}], ";"}], "\n", 
-   RowBox[{"(*", 
-    RowBox[{
-     RowBox[{"glomerular", " ", "z"}], "-", "spacing"}], "*)"}], 
+     RowBox[{"glomerular", " ", "x"}], "-", "spacing"}], "*)"}], 
    "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{"gloz", "=", "2"}], ";"}], "\[IndentingNewLine]", 
+    RowBox[{"glox", "=", "60"}], ";"}], "\n", 
+   RowBox[{"(*", 
+    RowBox[{
+     RowBox[{"glomerular", " ", "y"}], "-", "spacing"}], "*)"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"gloy", "=", "20"}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{
+     RowBox[{"glomerular", " ", "z"}], "-", "spacing"}], "*)"}], "\n", 
+   RowBox[{
+    RowBox[{"gloz", "=", "2"}], ";"}], "\n", 
    RowBox[{"(*", 
     RowBox[{"embedding", " ", 
      RowBox[{"geometry", ".", " ", "should"}], " ", "not", " ", "need", " ", 
-     "to", " ", "change"}], "*)"}], "\n", 
+     "to", " ", "change"}], "*)"}], "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{"embedinggeom", "=", "\"\<cube\>\""}], ";"}], "\n", 
+    RowBox[{"embedinggeom", "=", "\"\<cube\>\""}], ";"}], 
+   "\[IndentingNewLine]", 
    RowBox[{"(*", 
     RowBox[{"geometry", " ", "of", " ", "the", " ", "local", " ", 
      RowBox[{"network", ".", " ", "shold"}], " ", "not", " ", "need", " ", 
-     "to", " ", "change"}], "*)"}], "\[IndentingNewLine]", 
+     "to", " ", "change"}], "*)"}], "\n", 
    RowBox[{
-    RowBox[{"samplegeom", "=", "\"\<sphere\>\""}], ";"}], 
-   "\[IndentingNewLine]", 
+    RowBox[{"samplegeom", "=", "\"\<sphere\>\""}], ";"}], "\n", 
    RowBox[{"(*", 
     RowBox[{
      RowBox[{"target", " ", "soft"}], "-", 
-     RowBox[{"constrained", " ", "dnedrite", " ", "length"}]}], "*)"}], "\n", 
-   
+     RowBox[{"constrained", " ", "dnedrite", " ", "length"}]}], "*)"}], 
+   "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{"dlen", "=", "15"}], ";"}], "\[IndentingNewLine]", 
+    RowBox[{"dlen", "=", "15"}], ";"}], "\n", 
    RowBox[{"(*", 
     RowBox[{
     "spatial", " ", "scale", " ", "of", " ", "random", " ", "exponentially", 
-     " ", "distributed", " ", "input", " ", "correlations"}], "*)"}], "\n", 
+     " ", "distributed", " ", "input", " ", "correlations"}], "*)"}], 
+   "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{"corr", "=", "0"}], ";"}]}]}]], "Input",
  CellChangeTimes->{{3.594926606307495*^9, 3.594926606706932*^9}, {
@@ -221,11 +201,10 @@ Cell[BoxData[
 Cell[BoxData[
  RowBox[{
   StyleBox[
-   RowBox[{"Information", "::", "notfound"}], "MessageName"], 
-  RowBox[{
-  ":", " "}], "\<\"Symbol \[NoBreak]\\!\\(\\\"ALGconnections\\\"\\)\[NoBreak] \
-not found. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\
-\\\", ButtonFrame->None, \
+   RowBox[{"Information", "::", "notfound"}], "MessageName"], ":", 
+  " ", "\<\"Symbol \[NoBreak]\\!\\(\\\"ALGconnections\\\"\\)\[NoBreak] not \
+found. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
 ButtonData:>\\\"paclet:ref/message/General/notfound\\\", ButtonNote -> \
 \\\"Information::notfound\\\"]\\)\"\>"}]], "Message", "MSG",
  CellChangeTimes->{3.595233438914198*^9}]
@@ -256,7 +235,7 @@ Cell[BoxData[
       RowBox[{"biglen", ",", "Diam", ",", 
        RowBox[{"grcinvol", "[", 
         RowBox[{"Diam", ",", "samplegeom"}], "]"}], ",", "samplegeom"}], 
-      "]"}]}], ";"}], "\[IndentingNewLine]", "\[IndentingNewLine]", "\n", 
+      "]"}]}], ";"}], "\[IndentingNewLine]", "\n", "\[IndentingNewLine]", 
    RowBox[{"(*", 
     RowBox[{
     "should", " ", "not", " ", "need", " ", "to", " ", "change", " ", "the", 
@@ -279,8 +258,8 @@ Cell[BoxData[
     RowBox[{"AmodelM", "=", 
      RowBox[{"Amatrix", "[", 
       RowBox[{"connsM", "[", 
-       RowBox[{"[", "1", "]"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
-   "\n"}]}]], "Input",
+       RowBox[{"[", "1", "]"}], "]"}], "]"}]}], ";"}], "\n", 
+   "\[IndentingNewLine]"}]}]], "Input",
  CellChangeTimes->{{3.594926538117738*^9, 3.5949265381195107`*^9}, {
   3.594926569711055*^9, 3.594926611935204*^9}, {3.5949266873087673`*^9, 
   3.5949266886663437`*^9}, {3.594935562746991*^9, 3.594935569746029*^9}, {
@@ -324,9 +303,8 @@ Cell[BoxData[
 Cell[BoxData[
  RowBox[{
   StyleBox[
-   RowBox[{"Part", "::", "partw"}], "MessageName"], 
-  RowBox[{
-  ":", " "}], "\<\"Part \[NoBreak]\\!\\(2\\)\[NoBreak] of \
+   RowBox[{"Part", "::", "partw"}], "MessageName"], ":", 
+  " ", "\<\"Part \[NoBreak]\\!\\(2\\)\[NoBreak] of \
 \[NoBreak]\\!\\(Amatrix[15]\\)\[NoBreak] does not exist. \
 \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
 ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/General/partw\\\", \
@@ -336,13 +314,12 @@ ButtonNote -> \\\"Part::partw\\\"]\\)\"\>"}]], "Message", "MSG",
 Cell[BoxData[
  RowBox[{
   StyleBox[
-   RowBox[{"Export", "::", "type"}], "MessageName"], 
-  RowBox[{
-  ":", " "}], "\<\"\[NoBreak]\\!\\(Part\\)\[NoBreak] cannot be exported to \
-the \[NoBreak]\\!\\(\\\"GraphML\\\"\\)\[NoBreak] format. \
-\\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
-ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/Export/type\\\", \
-ButtonNote -> \\\"Export::type\\\"]\\)\"\>"}]], "Message", "MSG",
+   RowBox[{"Export", "::", "type"}], "MessageName"], ":", 
+  " ", "\<\"\[NoBreak]\\!\\(Part\\)\[NoBreak] cannot be exported to the \
+\[NoBreak]\\!\\(\\\"GraphML\\\"\\)\[NoBreak] format. \\!\\(\\*ButtonBox[\\\"\
+\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/Export/type\\\", ButtonNote -> \
+\\\"Export::type\\\"]\\)\"\>"}]], "Message", "MSG",
  CellChangeTimes->{3.595233439120747*^9}]
 }, Open  ]],
 
@@ -407,22 +384,20 @@ Cell[BoxData[
 Cell[BoxData[
  RowBox[{
   StyleBox[
-   RowBox[{"Total", "::", "normal"}], "MessageName"], 
-  RowBox[{
-  ":", " "}], "\<\"Nonatomic expression expected at position \
-\[NoBreak]\\!\\(1\\)\[NoBreak] in \[NoBreak]\\!\\(Total[15]\\)\[NoBreak]. \\!\
-\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
-ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/General/normal\\\", \
-ButtonNote -> \\\"Total::normal\\\"]\\)\"\>"}]], "Message", "MSG",
+   RowBox[{"Total", "::", "normal"}], "MessageName"], ":", 
+  " ", "\<\"Nonatomic expression expected at position \[NoBreak]\\!\\(1\\)\
+\[NoBreak] in \[NoBreak]\\!\\(Total[15]\\)\[NoBreak]. \\!\\(\\*ButtonBox[\\\"\
+\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/General/normal\\\", ButtonNote -> \
+\\\"Total::normal\\\"]\\)\"\>"}]], "Message", "MSG",
  CellChangeTimes->{3.5952334393595133`*^9}],
 
 Cell[BoxData[
  RowBox[{
   StyleBox[
-   RowBox[{"Histogram", "::", "ldata"}], "MessageName"], 
-  RowBox[{
-  ":", " "}], "\<\"\[NoBreak]\\!\\(Total[15]\\)\[NoBreak] is not a valid \
-dataset or list of datasets. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+   RowBox[{"Histogram", "::", "ldata"}], "MessageName"], ":", 
+  " ", "\<\"\[NoBreak]\\!\\(Total[15]\\)\[NoBreak] is not a valid dataset or \
+list of datasets. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
 ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
 ButtonData:>\\\"paclet:ref/Histogram\\\", ButtonNote -> \
 \\\"Histogram::ldata\\\"]\\)\"\>"}]], "Message", "MSG",
@@ -443,13 +418,11 @@ Cell[BoxData[
 Cell[BoxData[
  RowBox[{
   StyleBox[
-   RowBox[{"Information", "::", "notfound"}], "MessageName"], 
-  RowBox[{
-  ":", " "}], "\<\"Symbol \[NoBreak]\\!\\(\\\"denlendist\\\"\\)\[NoBreak] not \
-found. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
-ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
-ButtonData:>\\\"paclet:ref/message/General/notfound\\\", ButtonNote -> \
-\\\"Information::notfound\\\"]\\)\"\>"}]], "Message", "MSG",
+   RowBox[{"Information", "::", "notfound"}], "MessageName"], ":", 
+  " ", "\<\"Symbol \[NoBreak]\\!\\(\\\"denlendist\\\"\\)\[NoBreak] not found. \
+\\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
+ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/General/notfound\\\", \
+ButtonNote -> \\\"Information::notfound\\\"]\\)\"\>"}]], "Message", "MSG",
  CellChangeTimes->{3.595233439526586*^9}]
 }, Open  ]],
 
@@ -473,11 +446,10 @@ Cell[BoxData[
 Cell[BoxData[
  RowBox[{
   StyleBox[
-   RowBox[{"Histogram", "::", "ldata"}], "MessageName"], 
-  RowBox[{
-  ":", " "}], "\<\"\[NoBreak]\\!\\(denlendist[\\(\\(15, \\(\\(confineglom[\\(\
-\\(\\(\\(glopos[\\(\\(200, 2745, \\(\\({45, 17, 8, 5}\\)\\), 60, 20, 2, \
-\\\"cube\\\"\\)\\)]\\)\\), \\\"sphere\\\", 80\\)\\)]\\)\\), \
+   RowBox[{"Histogram", "::", "ldata"}], "MessageName"], ":", 
+  " ", "\<\"\[NoBreak]\\!\\(denlendist[\\(\\(15, \
+\\(\\(confineglom[\\(\\(\\(\\(glopos[\\(\\(200, 2745, \\(\\({45, 17, 8, 5}\\)\
+\\), 60, 20, 2, \\\"cube\\\"\\)\\)]\\)\\), \\\"sphere\\\", 80\\)\\)]\\)\\), \
 \\(\\(grcpos[\\(\\(200, 80, \\(\\(grcinvol[\\(\\(80, \\\"sphere\\\"\\)\\)]\\)\
 \\), \\\"sphere\\\"\\)\\)]\\)\\)\\)\\)]\\)\[NoBreak] is not a valid dataset \
 or list of datasets. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
@@ -1250,86 +1222,9 @@ eTbEW1wBWXeuDH+zXSAvW/zYPvhMF9UeD/ZruJjA61+gsWjND24aPrk6Q/VE
 }, Open  ]]
 },
 WindowSize->{1231, 796},
-WindowMargins->{{138, Automatic}, {61, Automatic}},
+WindowMargins->{{147, Automatic}, {96, Automatic}},
+PrivateNotebookOptions->{"FileOutlineCache"->False},
 ShowSelection->True,
 FrontEndVersion->"9.0 for Linux x86 (64-bit) (January 25, 2013)",
 StyleDefinitions->"Default.nb"
 ]
-(* End of Notebook Content *)
-
-(* Internal cache information *)
-(*CellTagsOutline
-CellTagsIndex->{}
-*)
-(*CellTagsIndex
-CellTagsIndex->{}
-*)
-(*NotebookFileOutline
-Notebook[{
-Cell[557, 20, 338, 7, 55, "Input"],
-Cell[898, 29, 330, 6, 32, "Input"],
-Cell[CellGroupData[{
-Cell[1253, 39, 322, 6, 55, "Input"],
-Cell[1578, 47, 266, 3, 89, "Output"],
-Cell[1847, 52, 483, 10, 23, "Message"],
-Cell[2333, 64, 172, 2, 32, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[2542, 71, 480, 9, 55, "Input"],
-Cell[3025, 82, 436, 9, 23, "Message"],
-Cell[3464, 93, 78, 1, 32, "Output"]
-}, Open  ]],
-Cell[3557, 97, 552, 11, 77, "Input"],
-Cell[4112, 110, 4070, 103, 561, "Input"],
-Cell[CellGroupData[{
-Cell[8207, 217, 57, 1, 32, "Input"],
-Cell[8267, 220, 471, 10, 23, "Message"]
-}, Open  ]],
-Cell[8753, 233, 2360, 57, 275, "Input"],
-Cell[CellGroupData[{
-Cell[11138, 294, 283, 6, 32, "Input"],
-Cell[11424, 302, 220, 2, 32, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[11681, 309, 459, 12, 55, "Input"],
-Cell[12143, 323, 474, 10, 23, "Message"],
-Cell[12620, 335, 491, 10, 23, "Message"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[13148, 350, 996, 23, 121, "Input"],
-Cell[14147, 375, 210, 2, 32, "Output"],
-Cell[14360, 379, 208, 2, 32, "Output"]
-}, Open  ]],
-Cell[14583, 384, 214, 4, 32, "Input"],
-Cell[14800, 390, 191, 5, 32, "Input"],
-Cell[CellGroupData[{
-Cell[15016, 399, 222, 5, 32, "Input"],
-Cell[15241, 406, 501, 10, 23, "Message"],
-Cell[15745, 418, 461, 10, 23, "Message"],
-Cell[16209, 430, 160, 3, 32, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[16406, 438, 119, 2, 32, "Input"],
-Cell[16528, 442, 467, 10, 23, "Message"]
-}, Open  ]],
-Cell[17010, 455, 293, 8, 32, "Input"],
-Cell[CellGroupData[{
-Cell[17328, 467, 167, 3, 32, "Input"],
-Cell[17498, 472, 748, 14, 59, "Message"],
-Cell[18249, 488, 731, 18, 55, "Output"]
-}, Open  ]],
-Cell[18995, 509, 322, 10, 32, "Input"],
-Cell[19320, 521, 376, 10, 32, "Input"],
-Cell[CellGroupData[{
-Cell[19721, 535, 184, 4, 32, "Input"],
-Cell[19908, 541, 383, 8, 406, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[20328, 554, 20951, 346, 410, "Input"],
-Cell[41282, 902, 20928, 346, 410, "Output"]
-}, Open  ]]
-}
-]
-*)
-
-(* End of internal cache information *)
